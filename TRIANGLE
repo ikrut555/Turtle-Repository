@@ -1,0 +1,15 @@
+import turtle
+def triangle(x,y,side,angle,color):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.pencolor(color)
+    turtle.fillcolor(color)
+    turtle.right(60+angle)
+    turtle.forward(side)
+    turtle.right(120)
+    turtle.forward(side)
+    turtle.right(120)
+    turtle.forward(side)
+    turtle.end_fill()
