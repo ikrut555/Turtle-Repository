@@ -1,0 +1,28 @@
+def parallelogram(x, y, a, b, angle, color):
+    '''
+    Function, drawing parallelogram.
+    :param x: upper left corner coordinate x
+    :param y: upper left corner coordinate y
+    :param a: length of a longer side
+    :param b: length of a shorter side
+    :param angle: angle
+    :param color: filling color
+    :return: None
+    '''
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.fillcolor(color)
+    turtle.pencolor("white")
+    turtle.right(angle)
+    turtle.forward(a)
+    turtle.right(180-angle)
+    turtle.forward(b)
+    turtle.right(angle)
+    turtle.forward(a)
+    turtle.right(180-angle)
+    turtle.forward(b)
+    turtle.left(90)
+    turtle.end_fill()
+    turtle.done()
